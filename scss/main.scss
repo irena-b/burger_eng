@@ -1,0 +1,37 @@
+//config
+@import "./config/_variables.scss";
+@import "./config/_mixins.scss";
+
+//base
+@import "./layout/_fonts.scss";
+@import "./layout/_base.scss";
+@import "./layout/_common.scss";
+
+//sections
+@import "./section/_first.scss";
+@import "./section/_thebest.scss";
+@import "./section/_burger.scss";
+@import "./section/_team.scss";
+@import "./section/_menu.scss";
+@import "./section/_reviews.scss";
+@import "./section/_order.scss";
+@import "./section/_map.scss";
+@import "./section/_fixed-menu.scss";
+
+// blocks
+@import "./section/_composition.scss";
+@import "./section/_calories.scss";
+@import "./section/_hamburger-menu.scss";
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+.fixed-menu {
+    position: fixed;
+    top: rem(20px);
+    right: rem(20px);
+}
+.fixed-menu__item {
+    margin-bottom: rem(15px);
+
+}
+.fixed-menu__link {
+    display: flex;
+    width: rem(20px);
+    height: rem(20px);
+    align-items: center;
+    justify-content: center;
+    border: rem(1px) solid transparent;
+    border-radius: 50%;
+    position: relative;
+    &:hover {
+        border-color: #fff;
+    }
+    &:before {
+        content: "";
+        @include circle (rem(5px), #fff);
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}

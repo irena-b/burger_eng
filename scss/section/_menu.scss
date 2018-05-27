@@ -1,0 +1,71 @@
+.menu {
+    background: url('../img/bg/menu-bg.jpg') center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.menu__title {
+padding-top: rem(100px);
+margin-left: 5%;
+}
+.menu__acco {
+position: absolute;
+right: 0;
+top: 0;
+bottom: 0;
+display: flex;
+max-width: 60%;
+
+}
+.menu__acco-item {
+    display: flex;
+    height: 100%;
+    &_active {
+        .menu__acco-trigger-text{
+            color: $yellow;
+        }
+    }
+}
+.menu__acco-trigger {
+    width:rem(120px);
+    display: block;
+	height: 100%;
+	float: left;
+	text-decoration: none;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+    
+}
+.menu__acco-trigger-text {
+    color: #fff;
+    font-family: 'Gagalin';
+    font-size: rem(40px);
+    text-transform: uppercase;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    position: absolute;
+    bottom: rem(10px);
+    left: 50%;
+    transform-origin: 0;
+    
+    
+}
+.menu__acco-description{
+height: 100%;
+background: rgba(#2f3234, .93);
+overflow: hidden;
+width: 0;
+right: 0;
+transition: width 1s;
+}
+.menu__acco-text {
+    font-size: rem(14px);
+    font-family: "Ubuntu";
+    color: #fff;;
+    font-weight: 300;
+    opacity: .93;
+    padding-left: rem(35px);
+    margin-top: rem(40px);
+    padding-right: rem(35px);
+    line-height: 1.714;
+}

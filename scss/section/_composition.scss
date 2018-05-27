@@ -1,0 +1,70 @@
+.burger__composition {
+    width: 100%;
+    height: 100%;   
+    position: absolute;
+}
+
+.burger__composition-image {
+    position: absolute;
+    top: 10%;
+    left: rem(10px);
+    background-color: $orange;
+    width: rem(90px);
+    height: rem(90px);
+    border-radius: rem(5px);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; 
+    //z-index: 1;   
+    &:hover {  
+        background-color: darken($orange, 7%);
+   
+    }
+}
+.burger__composition-pic {
+    justify-content: center;
+    align-items: center;
+    padding: rem(10px);
+}
+.burger__composition-title {
+    color: #fff;
+    font-family: 'Gagalin';
+    font-weight: rem(14px);
+    justify-content: center;
+    text-align: center;
+}
+
+.burger__composition-table {
+    position: absolute;
+    background-color: #fef8ec;
+    width: rem(280px);
+    height: rem(330px);
+    border-radius: 3%;
+    top: 10%;
+    left:rem(100px);
+    opacity: 0;
+    transition: 1s;
+}
+
+.composition__img-logo {
+    width: rem(50px);
+    height: rem(40px);
+}
+.composition__desc {
+font-size: rem(14px);
+font-family: "Ubuntu";
+color: rgb(47, 50, 52);
+font-weight: 400;
+}
+.composition__amount {
+font-size: rem(14px);
+font-family: "Ubuntu";
+color: rgb(47, 50, 52);
+font-weight: 300;
+}
+.burger__composition-image:hover {
+   ~.burger__composition-table{
+    opacity: 1;
+}
+}
+

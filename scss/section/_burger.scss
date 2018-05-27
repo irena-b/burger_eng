@@ -1,0 +1,70 @@
+.burger{
+    background: url('../img/bg/burger-bg.jpg') center center no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.burger__container {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    height: 100%;  
+    position: relative;  
+}
+.burger__content {
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+flex: 1;
+align-items: center;
+justify-content: center;
+//padding-bottom: 15%;
+position: relative;
+}
+.burger__img, .burger__description {
+flex-basis: 48%;
+display: center;
+justify-content: center;
+
+}
+.burger__img-pic {
+max-width: 100%;
+}
+.burger__description-text {
+    color: #fff;
+    font-family: 'Ubuntu';
+    font-size: rem(14px);
+    font-weight: 300;
+    line-height: rem(24px);
+}
+.burger__price {
+    color: $orange;
+    font-family: 'Gagelin';
+    font-size: rem(72px);
+    font-weight: bold;
+    display: inline-block;
+}
+.burger__btn {
+    display: inline-block;
+    margin-left: rem(30px);    
+}
+.go-left-btn, .go-right-btn {
+    background: url('../img/content/arrow-scroll.png') center center no-repeat;
+    position: absolute;
+    display: inline-block;
+    width: rem(20px);
+    height: rem(20px);
+    z-index: 100;
+    
+}
+.go-left-btn {
+    transform: rotate(90deg);
+    left: 5%;
+    
+}
+.go-right-btn {
+    transform: rotate(270deg);
+    right:5%;    
+    
+}

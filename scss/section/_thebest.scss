@@ -1,0 +1,63 @@
+.best {
+    background-image: url('../img/bg/best-bg.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    display: flex;
+  }
+  .best__list {
+display: flex;
+justify-content: space-between;
+@include phones {
+  display: inline-block;
+}  
+}
+
+  .best__item {
+    width: 28%;
+    //display: flex;
+    @include phones {
+  //flex-direction: row;
+  width: 100%;
+  text-align: left;
+}
+  }
+  .best__pic {
+      display: flex;
+      justify-content: center;
+  }
+  .best__icon {
+      width: rem(100px);
+      height: rem(90px);
+      @include phones {
+        height: rem(120px);
+      }    
+  }
+  .best__info {
+      text-align: center;
+      margin-top: rem(35px);
+  }
+
+  .best__title {
+    font-size: rem(24px);
+    font-family: "Lifehack";
+    color: rgb(47, 50, 52);
+    text-align: center;
+    @include phones {
+      text-align: left;
+      margin-top: 10px;
+    }
+  }
+  .best__description {
+        font-size: rem(14px);
+        font-family: "Ubuntu";
+        color: rgba(47, 50, 52, 0.8);
+        line-height: 1.714;
+        text-align: center;
+        @include phones {
+          font-size: rem(16px);
+      }
+    }
+
+      
+  

@@ -1,0 +1,104 @@
+.team {
+    background: url('../img/bg/team_bg.jpg') center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.team__container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    background-color: #2f3234;
+    opacity: .93;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include tablets {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+}
+ .team__acco-item {
+     margin-bottom: rem(35px);
+ }
+.team__acco-item--active {
+    .team__acco-trigger {
+        color: $yellow;
+
+        &:before{
+            transform: rotate(180deg);
+        }
+    }
+    .team__acco-content {
+        height: auto;
+    }
+}
+.team__content {
+ width: 70%;    
+}
+.team__acco-text {
+    color: #fff;
+
+}
+  
+.team__acco-trigger {
+    font-size: rem(14px);
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Gagalin';
+    display: flex;
+    align-items: center;
+    &:before {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        border: rem(9px) solid transparent;
+        border-bottom-width: 0;
+        border-top: rem(9px) solid $yellow;
+        margin-right: rem(10px);
+    }
+  
+}
+.team__acco-content {
+display: flex;
+height: 0;
+overflow: hidden; 
+margin-top: rem(10px);
+}
+.team__acco-pic {
+    text-align: center;
+    //width: 30%;
+    
+}
+.team__acco-avatar {
+    border-radius: 50%;
+    overflow: hidden;
+    width: rem(100px);
+    height: rem(100px);
+}
+.team__acco-text {
+    margin-left: rem(20px);
+}
+.team__acco-article-title{
+    font-size: rem(14px);
+    font-family: "Ubuntu";
+    color: #fff;;
+    font-weight: bold;
+
+}
+.team__acco-article-content p {
+    font-size: rem(14px);
+    font-family: "Ubuntu";
+    color: #fff;;
+    font-weight: 300;
+}
+.reviews__btn {
+    margin-left: rem(20px);
+    
+}

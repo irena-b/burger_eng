@@ -1,0 +1,135 @@
+.first {
+    background-image: url('../img/bg/first_bg.png');
+    background-size: cover;
+    background-position: 50%;
+    position: relative;
+    background-repeat: no-repeat;
+}
+.first__container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: rem(10px);
+    align-items: center;
+}
+.header__menu {
+  @include tablets(){
+      display: none;
+  }      
+}
+.header__links {
+    display: flex;
+    align-items: center;
+  }
+.header__logo {
+    margin-right: auto;
+}
+.nav {
+    margin-right:rem(15px);
+ }
+ .nav__list {
+ display: flex;
+ align-items: center;
+ }
+
+ .nav__item {
+     display: inline-block;
+     white-space: nowrap;
+     vertical-align: middle;
+     &:after {
+         display: inline-block;
+         vertical-align: middle;
+         content: '';
+         @include circle (rem(5px), #fff);
+         margin: 0 rem(12px);
+     }
+     &:last-child:after {
+         display: none;
+     }
+ }
+ .nav__link {
+    display: inline-block;
+    color:#fff;
+    font-size: rem(13px);
+    font-weight: 500;
+    line-height: 1.42;
+    text-transform: uppercase;
+    text-decoration: none;
+    vertical-align: middle;
+    transition: .5;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.first__content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15%;
+    @include tablets {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 0 20%;
+        align-content: center;
+    }
+   
+}
+.first__img, .first__description {
+    flex-basis: 50%;
+    display: center;
+    @include tablets{
+        width: 90%;
+        text-align: center;
+    }
+    @include phones{
+        width: 95%;
+    }
+}
+.first__img-pic {
+    max-width: 95%;
+    max-height: 100%;
+    overflow: hidden;    
+}
+
+
+
+.first__description {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.first__description-text {
+    color: #fff;
+    font-family: 'Lifehack';
+    font-size: rem(65px);
+    font-weight: 400;
+    line-height: 1;
+    @include tablets {
+        font-size: rem(60px);
+    }
+    @include phones {
+        font-size: rem(40px);
+    }
+}
+.go-down-btn {
+    background: url('../img/content/arrow-scroll.png') center center no-repeat;
+    position: absolute;
+    display: inline-block;
+    width: rem(20px);
+    height: rem(20px);
+    align-items: center;
+    bottom: rem(30px);
+}
+
+

@@ -1,0 +1,32 @@
+.burger__calories {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   // position: relative;
+    
+}
+.burger__calories-img {
+    width: rem(60px);
+    
+}
+.burger__calories-amount, .burger__calories-kkal {
+    white-space: nowrap;
+}
+.burger__calories-amount {
+    color: #fff;
+    font-family: 'Gagalin';
+    font-size: rem(20px);
+    position: absolute;
+    bottom: rem(55px);
+}
+.burger__calories-kcal {
+    color: #fff;
+    font-family: 'Gagalin';
+    font-size: rem(14px);
+    position: absolute;
+    bottom: rem(20px);
+}

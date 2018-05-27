@@ -1,0 +1,117 @@
+.order {
+    background: url('../img/bg/order_bg.jpg') center center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.form {
+    color: #fff;
+    display: flex;
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+      }
+}
+.form__left, .form__right {
+    width: 49%;
+    display: center;
+    justify-content: center;
+    
+    @include tablets {
+        width: 65%;
+        margin-left: 0;
+      }
+}
+.form__right {
+    margin-left: 2%;
+}
+.form__row{
+margin-bottom: rem(20px);
+display: flex;
+}
+.form__block {
+    display: block;
+    flex: 1;
+    margin-right: rem(20px);
+    width: 100%;
+
+    &:last-child {
+    margin-right: rem(0px);
+}
+}
+.form__input {
+    padding: rem(10px);
+    background: #fff;
+    border: 0;
+    width: 100%;
+    border-radius: rem(5px);
+}
+.form__input-comment {
+    height: rem(118px);
+    width: 100%;
+    resize: none;
+}
+.form__title {
+    color: #fff;
+    font-family: 'Ubuntu';
+    font-size: rem(14px);
+    font-weight: 300;
+    margin-bottom: rem(5px);
+}
+.form__radio {
+    display: flex;
+    margin-right: rem(10px);
+}
+.form__radio-elem {
+    margin:0;
+    display: inline-block;
+    vertical-align: middle;
+    //display: none;
+}
+.form__radio-fake {
+    display: inline-block;
+    vertical-align: middle;
+    width: rem(16px);
+    height: rem(16px);
+    border-radius: 50%;
+   // border: rem(1px) solid ;
+    position: relative;
+    background-color: #fff;
+}
+.form__radio-elem:checked + .form__radio-fake:after {
+    display: inline-block
+}
+.form__radio-fake:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: rem(8px);
+    height: rem(8px);
+    background-color:$orange;
+    border-radius: 50%;
+    display: none;
+}
+.form__radio-elem:focus +.form__radio-fake {
+    border: rem(1px) solid $orange;
+}
+.form__checkbox {
+    display: flex;
+}
+
+.form__radio-title {
+    margin-left: rem(10px);
+}
+input, textarea {
+    outline: none;
+}
+textarea {
+    //resize: none;
+}
+input:focus, textarea:focus {
+    border: rem(1px) solid $orange;
+}
