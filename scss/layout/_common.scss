@@ -4,7 +4,7 @@
     position: relative;
   //  min-width: rem(940px)+rem(20px);
    // min-height: 100%;
-   //overflow: hidden;
+   overflow: hidden;
 }
 .container {
     max-width: 940px;
@@ -23,6 +23,7 @@
     min-height: 650px;
     will-change: transform;
     position: relative;
+    transition: 1s;
 }
 
 .section {
@@ -42,7 +43,7 @@
     background-color: $orange;
     color: #fff;
     border-radius: rem(5px);
-    text-decoration: none;
+    text-decoration: none;-
     font-size: rem(13px);
     font-weight: 500;
     line-height: 1.42;
