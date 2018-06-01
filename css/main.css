@@ -77,7 +77,6 @@ table {
 
 .container {
   max-width: 940px;
-  width: 95%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -699,6 +698,18 @@ table {
   padding-right: 2.1875rem;
   line-height: 1.714; }
 
+.menu__acco-item_active .menu__acco-text {
+  display: inline-block; }
+
+.menu__acco-item_active .menu__acco-description {
+  width: 400px; }
+  @media screen and (max-width: 768px) {
+    .menu__acco-item_active .menu__acco-description {
+      width: 300px; } }
+  @media screen and (max-width: 768px) and (max-width: 480px) {
+    .menu__acco-item_active .menu__acco-description {
+      width: 140px; } }
+
 .reviews__list {
   width: 100%;
   height: 100%;
@@ -756,7 +767,6 @@ table {
 
 .order {
   background: url("../img/bg/order_bg.jpg") center center no-repeat;
-  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -765,11 +775,25 @@ table {
   -ms-flex-direction: column;
   flex-direction: column; }
 
+order
+.order .section__title {
+  margin-top: 3.75rem; }
+  @media screen and (max-width: 480px) {
+    order
+.order .section__title {
+      text-align: center;
+      width: 80%;
+      margin-top: 0.625rem; } }
+
 .form {
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-top: 10%; }
   @media screen and (max-width: 768px) {
     .form {
       -webkit-box-orient: vertical;

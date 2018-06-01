@@ -25,6 +25,7 @@ max-width: 60%;
         }
     }
 }
+
 .menu__acco-trigger {
     width:rem(120px);
     display: block;
@@ -68,4 +69,17 @@ transition: width 1s;
     margin-top: rem(40px);
     padding-right: rem(35px);
     line-height: 1.714;
+}
+.menu__acco-item_active .menu__acco-text {
+    display: inline-block;    
+    
+}
+.menu__acco-item_active .menu__acco-description {
+    width: 400px;
+    @include tablets {
+        width: 300px;
+    @include phones {
+        width: 140px;        
+    }
+}
 }
