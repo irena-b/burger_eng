@@ -32,7 +32,7 @@ menuAccordion.addEventListener("click", function(e) {
         menuContents[i].style.width = null;
       }
 
-      menuContent.style.width = "400px"; //размер задан в css при открытии контента
+      //menuContent.style.width = "400px"; //размер задан в css при открытии контента
       
     } else { 
 
